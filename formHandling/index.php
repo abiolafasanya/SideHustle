@@ -11,7 +11,7 @@
 <body>
 <div class="container">
                 <div class="jumbotron text-center">
-                    <h1 class="text-info">PHP Calculator</h1>
+                    <h1 class="text-info">PHP Session Authentication</h1>
                     <a href="../index.php" class="btn btn-primary m-auto">Back to Home</a>
                 </div>
     <!-- all input are being processed in process.php -->
