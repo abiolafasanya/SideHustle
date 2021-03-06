@@ -15,7 +15,6 @@
             Have a nice time checking and lemme know where
             i have missed it, if you see errors or correction
         </p>
-        <a href="index.php" class="btn btn-primary m-auto">Back to Home</a>
     </div>
         <div class="row justify-content-center m-5">
             <ul class="list-group">
