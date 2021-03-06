@@ -1,8 +1,9 @@
 ﻿
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <div class="container">
-<div class="jumbotron text-center h1 text-info">
-	PHP Calculator
+<div class="jumbotron text-center">
+	<h1 class="text-info">PHP Calculator</h1>
+	<a href="index.php" class="btn btn-primary m-auto">Back to Home</a>
 </div>
 <div class="row justify-content-center">
 	<form>

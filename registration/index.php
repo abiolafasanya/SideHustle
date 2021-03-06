@@ -11,6 +11,10 @@
 <body>
     <!-- all input are being processed in process.php -->
     <div class="container">
+        <div class="jumbotron text-center">
+        <h1 class="text-info">PHP Registration and Data Display</h1>
+        <a href="../index.php" class="btn btn-primary m-auto">Back to Home</a>
+    </div>
             <?php
 
                 //destroying user information success message
