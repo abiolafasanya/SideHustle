@@ -31,6 +31,9 @@ if(isset($_GET['logout'])){
 </head>
 <body>
     <div class="container">
+    <div class="jumbotron text-center">
+        <h1 class="text-info">welcome</h1>
+    </div>
         <h1>Hi, <b><?php echo $_SESSION["username"]; ?></b>. Welcome to Fastbeetech website.</h1>
         <p>
             <a href="welcome.php?logout" class="btn btn-danger">Sign Out of Your Account</a>
