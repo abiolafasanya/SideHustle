@@ -17,7 +17,7 @@
             <h5 class="col-12 text-center">Cookies</h5>
             <ul class="list-group">
                 <li class="list-group-item">cookies are client-side files that contain user information</li>
-                <li class="list-group-item">cookies are stored in the browser/li>
+                <li class="list-group-item">cookies are stored in the browser</li>
                 <li class="list-group-item">A cookie can keep information in the browser until deleted</li>
                 <li class="list-group-item">If you set Variable to cookies then your users will not have to log in</li>
             </ul>
