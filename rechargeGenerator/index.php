@@ -11,7 +11,7 @@
     <div class="container">
         <div class="jumbotron text-center ">
             <h1 class="text-info">Recharge pin</h1>
-            <a href="index.php" class="btn btn-primary m-auto">Back to Home</a>
+            <a href="../index.php" class="btn btn-primary m-auto">Back to Home</a>
         </div>
         <h1 class="text-center">Recharge pin</h1>
         <div class="row justify-content-center">
@@ -21,9 +21,10 @@
                     // recharge pin generator
                     
                     for($x = 0; $x <200; $x++ ){
+                        
                         echo 
                             '<li class="list-group-item">'.
-                                'Recharge Pin Number:'. '<br>'
+                                'Recharge Pin Number : '.'<br>'
                             . $pinRand =  random_int(1000000000000000, 9000000000000000).
                             '</li>'
                         ;                
