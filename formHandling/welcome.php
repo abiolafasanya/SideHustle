@@ -19,19 +19,23 @@ if(isset($_GET['logout'])){
     exit;
 }
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">  
+    <title>PHP FORM HANDLING - Welcome</title>
+</head>
 <body>
-    <div class="page-header">
-        <h1>Hi, <b><?php echo $_SESSION["username"]; ?></b>. Welcome to our site.</h1>
+    <div class="container">
+        <h1>Hi, <b><?php echo $_SESSION["username"]; ?></b>. Welcome to Fastbeetech website.</h1>
+        <p>
+            <a href="welcome.php?logout" class="btn btn-danger">Sign Out of Your Account</a>
+        </p>
     </div>
-    <p>
-        <a href="welcome.php?logout" class="btn btn-danger">Sign Out of Your Account</a>
-    </p>
+    
 </body>
 </html>
