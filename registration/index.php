@@ -44,7 +44,7 @@
       
        
         <!-- user information display after submit -->
-        <table class="table m-auto w-75">
+        <table class="table m-auto w-75 table-responsive">
                 <thead>
                     <tr>
                         <th>Name</th>
