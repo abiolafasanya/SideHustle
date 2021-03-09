@@ -11,12 +11,18 @@ if(isset($_GET['logout'])){
     $_SESSION = array();
     
     // Destroy the session.
-    session_destroy();
+    if( session_destroy()){
+        // Redirect to Signin form
+        session_start();
+
+        $_SESSION['message'] = "You have been logged out!";
+        $_SESSION['msg_type'] = "info";
+        header("location: index.php?data");
+        exit;
+
+    }
+    // session_destroy();
     
-    // Redirect to Signin form
-    
-    header("location: index.php");
-    exit;
 }
 ?>
 
