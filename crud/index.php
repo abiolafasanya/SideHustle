@@ -75,9 +75,9 @@
                     <?php endif; ?>
                     
                 </form>
-                
+
                 <table class="table table-responsive table-striped">
-                    <thead>
+                    <thead class="thead-light">
                         <tr>
                             <th>Username</th>
                             <th>Email</th>
