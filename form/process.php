@@ -37,12 +37,12 @@ if(isset($_POST['submit'])){
 
         // specify SMTP credentials
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.io';
+        $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Username = '48a5c8157ec506';
         $mail->Password = 'bf1045e7ab4fb3';
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Port = 25;
 
         $mail->setFrom($email, 'Harbiola Dashboard(Side Hustle');
         $mail->addAddress('harbiola78@gmail.com', 'Abiola Fasanya');
