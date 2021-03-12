@@ -75,9 +75,7 @@
                     <?php endif; ?>
                     
                 </form>
-            </div>
-
-            <div class="row justify-content-center">
+                
                 <table class="table table-responsive table-striped">
                     <thead>
                         <tr>
@@ -112,7 +110,10 @@
                     </tr>
                     <?php endwhile ?>
                 </table>
-    </div>
+            </div>
+
+            
+            
         
     </div>
 </body>
