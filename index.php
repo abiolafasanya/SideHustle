@@ -14,8 +14,8 @@
         <p class="">
             Have a nice time checking and lemme know where
             i have missed it, if you see errors or correction
-            <span>Message me <a href="contact">click here</a></span>
         </p>
+          <a href="contact" class="btn btn-success">Message me</a>
     </div>
         <div class="row justify-content-center m-5">
             <ul class="list-group">
