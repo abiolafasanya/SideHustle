@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
         $mail->Username = '48a5c8157ec506';
         $mail->Password = 'bf1045e7ab4fb3';
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 25;
+        $mail->Port = 2525;
 
         $mail->setFrom($email, 'Harbiola Dashboard(Side Hustle');
         $mail->addAddress('harbiola78@gmail.com', 'Abiola Fasanya');
