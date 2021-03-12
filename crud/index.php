@@ -77,7 +77,7 @@
                 </form>
             </div>
 
-            <div class="row-justify-center">
+            <div class="row justify-content-center">
                 <table class="table table-responsive table-striped">
                     <thead>
                         <tr>
