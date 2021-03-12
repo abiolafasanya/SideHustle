@@ -23,7 +23,7 @@
             <form action="process.php" method="post" id="contact">
             <p>Please drop your suggestion and advice</p>
                 <div class="form-group">
-                    <label for="name">Email</label>
+                    <label for="name">Name</label>
                     <input type="text" name="name" id="" class="form-control" required>
                 </div>
                 <div class="form-group">
