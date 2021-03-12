@@ -14,7 +14,7 @@
         <p class="">
             Have a nice time checking and lemme know where
             i have missed it, if you see errors or correction
-            <span>Message me <a href="form">click here</a></span>
+            <span>Message me <a href="contact">click here</a></span>
         </p>
     </div>
         <div class="row justify-content-center m-5">
