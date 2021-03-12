@@ -1,7 +1,7 @@
 <?php
 
+require 'path/to/composer/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
-require __DIR__ . '/vendor/autoload.php';
 
 
 $errors = [];
