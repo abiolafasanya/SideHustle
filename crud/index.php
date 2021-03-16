@@ -56,7 +56,7 @@
                     </div>
                    
                     <div class="form-group">
-                        <label for="username">Message</label>
+                        <label for="message">Message</label>
                         <textarea name="message"  class="form-control" cols="30" rows="10"><?= $message; ?></textarea>
                     </div>
 
