@@ -18,7 +18,7 @@
         require_once 'class/edUpDel.php'; 
         ?>
         <div class="jumbotron text-center text-info">
-                <h1>Crud Application</h1>
+                <h1>PHP Crud Application</h1>
                 <a href="../index.php" class="btn btn-primary">Home</a>
         </div>
 
