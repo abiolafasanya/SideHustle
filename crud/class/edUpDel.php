@@ -1,8 +1,8 @@
 <?php
 
-function insertData($a, $b, $c, $d, $e, $f){
+function insertData($a, $b, $c, $d, $e){
     $stmt = $b->prepare($a);
-    $stmt->bind_param("ssss", $c, $d, $e, $f);
+    $stmt->bind_param("sss", $c, $d, $e);
     if( $stmt->execute()){
         
         $_SESSION['message'] = 'Your data has been uploaded';
@@ -15,9 +15,9 @@ function insertData($a, $b, $c, $d, $e, $f){
         echo "Inserting Failed";
     }
 }
-function updateData($a, $b, $c, $d, $e, $f, $id){
+function updateData($a, $b, $c, $d, $e, $id){
     $stmt = $b->prepare($a);
-    $stmt->bind_param("ssssi", $c, $d, $e, $f,  $id);
+    $stmt->bind_param("sssi", $c, $d, $e, $id);
     if( $stmt->execute()){
         
         $_SESSION['message'] = "Message has been updated!";
@@ -60,7 +60,6 @@ function updateData($a, $b, $c, $d, $e, $f, $id){
                     $row = $result->fetch_array();
                     $username = $row['username'];
                     $email = $row['email'];
-                    $image = $row['image'];
                     $message = $row['message'];
                 }
 

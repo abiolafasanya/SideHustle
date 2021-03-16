@@ -70,10 +70,6 @@
         $email = test_input($_POST['email']);
         $message = test_input($_POST['message']);
         
-        // file upload
-        $image = $_FILES['image']['name'];
-        $path = "upload/".$image;
-        move_uploaded_file($_FILES['image']['tmp_name'], $path);
 
         $sql = "UPDATE user SET 
                 username = ?,
