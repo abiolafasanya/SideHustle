@@ -10,7 +10,7 @@
 
     if(isset($_POST['submit'])){
 
-        $username = $email = $message = $image = "";
+        $username = $email = $message = "";
 
         // function to validate form input
         function test_input($data) {
@@ -25,16 +25,13 @@
         $email = test_input($_POST['email']);
         $message = test_input($_POST['message']);
         
-        // file upload
-        $image = $_FILES['image']['name'];
-        $path = "upload/".$image;
-        move_uploaded_file($_FILES['image']['tmp_name'], $path);
+      
 
         
-        $sql = "INSERT INTO user (username, email, image, message) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO user (username, email, message) VALUES (?, ?, ?)";
         
         //function to process the sql has been defined in class folder edUpDel
-        insertData($sql, $conn, $username, $email, $image, $message);
+        insertData($sql, $conn, $username, $email, $message);
 
         $_SESSION['message'] = 'Your data has been uploaded';
         $_SESSION['alert'] = 'success';
@@ -81,11 +78,10 @@
         $sql = "UPDATE user SET 
                 username = ?,
                 email = ?,
-                image = ?,
                 message = ?
                 WHERE id = ?";
     
-        updateData($sql, $conn, $username, $email, $image, $message, $id);
+        updateData($sql, $conn, $username, $email, $message, $id);
           
         
 

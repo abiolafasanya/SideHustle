@@ -54,10 +54,7 @@
                         <label for="email">E-mail</label>
                         <input type="email" name="email" class="form-control" value="<?= $email; ?>">
                     </div>
-                    <div class="custom-file">
-                        <input type="file" name="image" value="<?= $image; ?>" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose an Image</label>
-                    </div>
+                   
                     <div class="form-group">
                         <label for="username">Message</label>
                         <textarea name="message"  class="form-control" cols="30" rows="10"><?= $message; ?></textarea>
@@ -76,40 +73,42 @@
                     
                 </form>
 
-                <table class="table table-responsive table-striped">
-                    <thead class="thead-light">
+                <div class="table-responsive">
+                
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Message</th>
+                                <th colspan="2">Action</th>
+                            </tr>
+                        </thead>
+                        <?php
+                            $result = $conn->query("SELECT * FROM user");
+                            while($row = $result->fetch_assoc()):
+                        ?>
                         <tr>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Message</th>
-                            <th>Image</th>
-                            <th colspan="2">Action</th>
+                            <td><?php echo $row['username']; ?></td>
+                            <td><?php echo $row['email']; ?></td>
+                            <td><?php echo $row['message']; ?></td>
+                            <td>
+                                <form>
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <button type="submit" name="edit" class="btn btn-primary">Edit</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form action="process.php">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
                         </tr>
-                    </thead>
-                    <?php
-                        $result = $conn->query("SELECT * FROM user");
-                        while($row = $result->fetch_assoc()):
-                    ?>
-                    <tr>
-                        <td><?php echo $row['username']; ?></td>
-                        <td><?php echo $row['email']; ?></td>
-                        <td><?php echo $row['message']; ?></td>
-                        <td><img src="upload/<?=$row['image'] ?>" width="200px"></td>
-                        <td>
-                            <form>
-                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                                <button type="submit" name="edit" class="btn btn-primary">Edit</button>
-                            </form>
-                        </td>
-                        <td>
-                            <form action="process.php">
-                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                                <button type="submit" name="delete" class="btn btn-danger">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                    <?php endwhile ?>
-                </table>
+                        <?php endwhile ?>
+                    </table>
+
+                </div>
             </div>
 
             
