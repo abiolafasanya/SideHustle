@@ -48,16 +48,16 @@
 
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="text" name="username" class="form-control" value="<?= $username; ?>"">
+                        <input type="text" name="username" class="form-control" value="<?= $username; ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" class="form-control" value="<?= $email; ?>">
+                        <input type="email" name="email" class="form-control" value="<?= $email; ?>" required>
                     </div>
                    
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea name="message"  class="form-control" cols="30" rows="10"><?= $message; ?></textarea>
+                        <textarea name="message"  class="form-control" cols="30" rows="10" required><?= $message; ?></textarea>
                     </div>
 
                     <?php  if(isset($_GET['edit'])): ?>
